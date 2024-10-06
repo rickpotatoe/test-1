@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class movement_player : MonoBehaviour
+{
+    public Rigidbody player;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        gameObject.name = "player";
+       
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (input.GetKeyDown(keycode.space))
+        {
+            player.velocity = 10;
+        }
+    
+    }
+}
